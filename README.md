@@ -1,21 +1,5 @@
 # Evaporust
 
-**TODO: Add description**
+This is a port of a [utility I wrote](https://github.com/dogue/evaporust) in Rust a while back. I'm using it to learn Elixir. I probably wouldn't recommend using this, but if you really want to, build it with `mix escript.build` and run it with the `--help` flag for an overview.
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `evaporust` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:evaporust, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/evaporust>.
-
+It runs `cargo clean` on every Rust project it finds (that has a `target` folder inside) during a recursive subdirectory walk.
